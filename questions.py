@@ -26,7 +26,7 @@ correct_answers_index = [1, 2, 0, 3, 1]
 # puntaje inicializado en 0
 puntaje = 0
 # Combinamos las tres listas en una lista de tuplas
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 # El usuario deberá contestar 3 preguntas
 for question, answer_options, correct_answer_index in questions_to_ask:
     # Se muestra la pregunta y las respuestas posibles
